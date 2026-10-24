@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yohannis Tadesse — Full-Stack &amp; Mobile Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Yohannis Tadesse, a full-stack and mobile developer building with TypeScript, React, Next.js, Node.js, Hono, Flutter and PostgreSQL."
+    />
+    <meta property="og:title" content="Yohannis Tadesse — Full-Stack & Mobile Developer" />
+    <meta property="og:description" content="Web apps, APIs and Flutter mobile apps. See my projects and get in touch." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply saved/system theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('theme')
+        if (t !== 'dark' && t !== 'light') {
+          t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+        document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
